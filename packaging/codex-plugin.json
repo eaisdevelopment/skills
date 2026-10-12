@@ -1,0 +1,6 @@
+{
+  "name": "ai-native-sdlc",
+  "version": "1.1.0",
+  "description": "Memory-first SDLC execution and honest verification using existing project controls.",
+  "skills": "./skills/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "sdlc-local",
+  "description": "The instruction-only SDLC integrity skill for authorized projects.",
+  "owner": { "name": "Pavlo" },
+  "plugins": [
+    {
+      "name": "ai-native-sdlc",
+      "source": "./plugins/ai-native-sdlc",
+      "description": "Memory-first SDLC execution and honest verification using existing project controls."
+    }
+  ]
+}

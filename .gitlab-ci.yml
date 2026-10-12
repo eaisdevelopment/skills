@@ -1,0 +1,9 @@
+stages:
+  - test
+
+skill-contract:
+  stage: test
+  image: python:3.13-bookworm
+  script:
+    - python3 -m unittest discover -s tests -t .
+

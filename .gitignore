@@ -1,0 +1,24 @@
+# Private/local evidence and knowledge stores
+docs/audit/
+memory/
+reports/
+
+# Credentials and value-bearing environment configuration
+.env
+.env.*
+
+# Historical and generated artifacts
+dist/
+build/
+evals/results/
+
+# Local tooling
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+node_modules/
+
