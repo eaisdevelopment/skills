@@ -28,7 +28,7 @@ The skill is language- and stack-neutral. Never assume Python, JavaScript, JVM, 
 
 After loading repository instructions, and before deciding how to implement or test:
 
-1. Search the configured knowledge vaults for the current business domain, problem, components, and failure modes; read relevant notes and source evidence.
+1. Search the configured knowledge vaults and read the configured agent store's index for the current business domain, problem, components, and failure modes; read relevant notes and source evidence.
 2. Locate and read the full applicable business/feature specification and its referenced rules, contracts, and acceptance criteria before business research or behavior decisions.
 3. Inspect existing architecture, ADRs, implementation, schemas, integrations, infrastructure, and deployment definitions for components and conventions to reuse.
 4. Locate the task's configuration sources, including `.env`; establish required keys, selected environment, and credential availability using the project's loader without emitting secret values.
