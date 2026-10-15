@@ -81,7 +81,8 @@ class BehavioralCaseTests(unittest.TestCase):
     def test_grounding_scenarios_are_available(self) -> None:
         names = {path.stem for path in (ROOT / "evals" / "cases").glob("*.md")}
         self.assertTrue(
-            {"memory-first", "resumed-turn", "missing-grounding", "credential-availability"} <= names
+            {"memory-first", "resumed-turn", "missing-grounding", "credential-availability", "agent-store"}
+            <= names
         )
 
 
