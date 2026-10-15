@@ -17,7 +17,7 @@ The skill is language- and stack-neutral. Never assume Python, JavaScript, JVM, 
 ## Operating contract
 
 1. Read the applicable repository instructions before acting. Treat repository commands, CI, permissions, hooks, ownership rules, and approval requirements as authoritative.
-2. Apply the research sequence below at every task step and development turn, including planning, implementation, debugging, testing, review, and resumption after compaction. Read [vault retrieval](references/knowledge-vault.md) and [project grounding](references/project-grounding.md) before the first decision.
+2. Apply the research sequence below at every task step and development turn, including planning, implementation, debugging, testing, review, and resumption after compaction. Read [vault and store retrieval](references/knowledge-vault.md) and [project grounding](references/project-grounding.md) before the first decision.
 3. Keep process proportional. A small safe edit needs a small plan; a security, money, data, migration, public-API, infrastructure, or deployment change needs explicit risks and stronger checks.
 4. Inspect before editing. Reuse the existing architecture and tooling. Do not introduce this skill's own framework, state files, policy database, scaffold, or generic verification engine.
 5. Implement the smallest coherent change. Do not hide unrelated defects or expand scope silently.
@@ -28,7 +28,7 @@ The skill is language- and stack-neutral. Never assume Python, JavaScript, JVM, 
 
 After loading repository instructions, and before deciding how to implement or test:
 
-1. Search the configured knowledge vaults for the current business domain, problem, components, and failure modes; read relevant notes and source evidence.
+1. Search the configured knowledge vaults and read the configured agent store's index for the current business domain, problem, components, and failure modes; read relevant notes and source evidence.
 2. Locate and read the full applicable business/feature specification and its referenced rules, contracts, and acceptance criteria before business research or behavior decisions.
 3. Inspect existing architecture, ADRs, implementation, schemas, integrations, infrastructure, and deployment definitions for components and conventions to reuse.
 4. Locate the task's configuration sources, including `.env`; establish required keys, selected environment, and credential availability using the project's loader without emitting secret values.

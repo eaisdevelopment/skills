@@ -89,14 +89,17 @@ There is no skill-specific configuration file, memory server, or ingestion pipel
 Use ai-native-sdlc for development and review tasks.
 Knowledge vault: memory/team-vault/ (read-only).
 Vault navigation: memory/team-vault/indexes/Agent_Coding_Guide.md.
+Agent store: memory/agent-notes/ (read-write).
+Agent store index: memory/agent-notes/MEMORY.md.
 Approved specifications: specification/index.md and its linked documents.
 Architecture and infrastructure: docs/architecture/, infra/, and existing ADRs.
 Configuration: our existing loader, .env variants, and configuration schema.
 Verification: the commands recorded in this project's README and CI.
+Read the agent store index at session start, after compaction, and on a resumed turn.
 Search the vault at each development step/turn. Keep secret values out of context.
 ```
 
-The skill does not include this repository's private architecture vault or automatically populate your memory. Grant only the needed read access to your own local or already-configured remote knowledge source. Explicitly search named/linked vault paths; ignored files and symlinks may be omitted by a general repository search. Preserve vault provenance and licenses; do not modify generated knowledge as part of a coding change.
+The skill does not include this repository's private architecture vault or automatically populate your memory. Grant only the needed read access to your own local or already-configured remote knowledge source. Explicitly search named/linked vault paths; ignored files and symlinks may be omitted by a general repository search. Preserve vault provenance and licenses; do not modify generated knowledge as part of a coding change. Name the agent store's index path if the project keeps one: nothing loads it automatically, and an unnamed store is reported as `not configured` rather than guessed at. Keep a store that syncs by its own mechanism out of this repository's history, because tooling that stages every change otherwise publishes it.
 
 At each step, search relevant terms, read useful notes, then read the full applicable approved specification and its dependencies. Inspect existing components and infrastructure before proposing additions. Check previously read sources for changes on later turns; reuse unchanged full readings with citations. Rebuild the source trail after compaction, rereading anything that cannot be substantiated.
 
